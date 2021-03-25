@@ -20,6 +20,13 @@ logging.basicConfig(
 )
 
 
+def main():
+    csv_init()
+    while True:
+        name = input('Please input the instructor name here: ')
+        get_instructor_info_init(name)
+
+
 def spoof_email_gen():
     logging.debug('No email found, generating spoof email')
     domain = '@asu.edu'
@@ -125,7 +132,4 @@ def get_instructor_info(url: str, prof_name: str) -> bool:
 
 
 if __name__ == '__main__':
-    csv_init()
-    while True:
-        name = input('Please input the instructor name here: ')
-        get_instructor_info_init(name)
+    main()
