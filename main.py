@@ -1,3 +1,4 @@
+import logging
 import re
 from os.path import exists
 from random import choice, randint
@@ -5,7 +6,6 @@ from string import ascii_lowercase
 from time import sleep
 
 import requests
-import logging
 from lxml import etree
 
 ISEARCH_REGEX = re.compile(r'https://isearch.asu.edu/profile/\d+')
