@@ -88,6 +88,7 @@ def get_instructor_info_init(prof_name: str):
     if not isearch_url_list:
         logging.debug('No isearch url found. This professor name might be spoofed.')
         logging.debug('Generating spoof email and phone number...')
+        csv_write(prof_name, spoof_phone_gen(), spoof_email_gen())
 
     else:
         logging.debug('ISearch website found, please wait...')
