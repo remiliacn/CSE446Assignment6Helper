@@ -4,7 +4,7 @@
 
 Run following code in cmd if you have python 3.7+ installed and added to path ***FIRST***
 ```
-git clone https://github.com/remiliacn/CSE446Assignment6Helper.git
+git clone https://github.com/remiliacn/CSE446Assignment7Helper.git
 cd CSE446Assignment6Helper
 python -m pip install -r requirements.txt
 ```
